@@ -1,395 +1,281 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>NEXOXI — Technology for Everyone, Value for Everyone</title>
-
-<style>
-body{
-  font-family:Arial,sans-serif;
-  max-width:900px;
-  margin:auto;
-  padding:40px;
-  background:#0b1020;
-  color:#f4f6fb;
-  line-height:1.6
-}
-
-h1{
-  font-size:52px;
-  margin-bottom:8px
-}
-
-h2{
-  margin-top:34px
-}
-
-.muted{
-  color:#b8c0d4
-}
-
-.pill{
-  display:inline-block;
-  border:1px solid #39435e;
-  border-radius:20px;
-  padding:6px 10px;
-  margin:4px
-}
-
-.box{
-  border:1px solid #39435e;
-  border-radius:14px;
-  padding:18px;
-  margin:16px 0;
-  background:#121a2d
-}
-
-.flow{
-  font-weight:bold;
-  font-size:20px
-}
-</style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08101e">
+  <meta name="description" content="NEXOXI is an independent, founder-led execution and trust technology initiative. Six specialized domains, bounded authority, evidence-led decisions, and practical real-world utility.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXOXI — Unique Worlds. One Future.">
+  <meta property="og:description" content="Real-world value, verified by design. An independent execution and trust technology initiative.">
+  <meta property="og:url" content="https://saliakay-sys.github.io/nexoxi-public/">
+  <title>NEXOXI — Unique Worlds. One Future.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='3' y='3' width='58' height='58' rx='17' fill='%230d1a30' stroke='%235cc4cd' stroke-width='2'/%3E%3Cpath d='M18 45V19l28 26V19' fill='none' stroke='%23a8f6ec' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root{color-scheme:dark;--bg:#08101e;--bg2:#0c1627;--panel:#111e31;--panel2:#152239;--line:#294057;--text:#edf5fb;--muted:#a9bdcc;--teal:#8de7d5;--cyan:#76bdf9;--blue:#508cfa;--gold:#e8c991;--radius:22px;--width:1180px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    body::before{position:absolute;z-index:-1;content:"";left:-18vw;top:-190px;width:70vw;height:700px;pointer-events:none;background:radial-gradient(ellipse,rgba(43,92,156,.27),transparent 68%)}
+    a{color:inherit;text-decoration:none}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--teal);outline-offset:4px}::selection{background:#286a77;color:#fff}
+    .wrap{width:min(var(--width),calc(100% - 48px));margin-inline:auto}.skip{position:absolute;top:-100px;left:16px;background:#fff;color:#071322;padding:8px 14px;z-index:100}.skip:focus{top:10px}
+    header{position:sticky;top:0;z-index:40;background:rgba(7,16,29,.91);border-bottom:1px solid rgba(143,177,198,.16);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+    .header-row{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:11px;letter-spacing:.14em;font-weight:820;font-size:1.13rem;white-space:nowrap}.brand svg{width:36px;height:36px;filter:drop-shadow(0 0 14px rgba(78,207,209,.22))}
+    .nav{display:flex;align-items:center;gap:27px}.nav a{font-size:.85rem;color:#d0dce5;transition:color .2s}.nav a:hover{color:var(--teal)}
+    .langs{display:flex;gap:3px;padding:3px;border:1px solid #34485b;border-radius:999px;background:#111d30;white-space:nowrap}.lang-btn{border:0;background:transparent;color:#c0d0dc;font-size:.76rem;font-weight:750;padding:7px 12px;border-radius:999px;cursor:pointer}.lang-btn[aria-pressed="true"]{background:#b9f5ea;color:#081522}
+    .hero{position:relative;padding:95px 0 82px;overflow:hidden}.hero::after{position:absolute;content:"";width:720px;height:720px;border:1px solid rgba(103,156,196,.09);border-radius:50%;right:-250px;top:-170px;z-index:-1}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--teal);text-transform:uppercase;letter-spacing:.17em;font-size:.73rem;font-weight:800}.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 18px var(--teal)}
+    h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.8rem,5.6vw,5.6rem);line-height:1.075;letter-spacing:-.059em;margin:23px 0 25px;font-weight:800}h1 .gradient{background:linear-gradient(110deg,#b6fff0 4%,#80c7fb 84%);color:transparent;background-clip:text;-webkit-background-clip:text}
+    .hero-copy{font-size:1.1rem;line-height:1.8;color:#c0d3e0;max-width:620px;margin-bottom:31px}.hero-copy strong{color:#f4faff}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:49px;border-radius:12px;padding:11px 19px;font-size:.89rem;font-weight:760;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px)}.button.primary{background:#a5f0e1;color:#09202b}.button.primary:hover{background:#cbfff2}.button.secondary{border:1px solid #36526b;color:#e0edf5;background:rgba(16,34,55,.68)}.button.secondary:hover{background:#1b344e}
+    .hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:29px}.tag{border-radius:999px;padding:6px 11px;font-size:.7rem;letter-spacing:.055em;font-weight:750;border:1px solid #33495c;color:#a9c2d0;background:#101e30}
+    .network-card{position:relative;height:505px;border-radius:27px;background:linear-gradient(149deg,rgba(23,47,69,.98),rgba(11,23,41,.95) 70%);border:1px solid rgba(103,171,195,.29);overflow:hidden;box-shadow:0 28px 100px rgba(0,0,0,.21),inset 0 1px 0 rgba(209,255,255,.05)}
+    .network-card::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(122,174,207,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(122,174,207,.055) 1px,transparent 1px);background-size:29px 29px;mask-image:linear-gradient(black 40%,transparent 100%)}
+    .network-top{position:absolute;left:27px;top:24px;right:27px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.66rem;font-weight:790;letter-spacing:.14em;color:#afcbd9}.signal{display:flex;gap:4px}.signal i{display:block;width:5px;height:5px;border-radius:50%;background:var(--teal);opacity:.85}
+    .network-lines{position:absolute;left:0;top:0;width:100%;height:100%;opacity:.56;pointer-events:none}.network-lines path{stroke:#5e9ab2;stroke-width:1.1;fill:none;stroke-dasharray:4 6}
+    .n-node{position:absolute;display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:120px;border-radius:12px;padding:13px 15px;border:1px solid #3b6178;background:rgba(19,42,62,.92);box-shadow:0 8px 25px rgba(0,0,0,.22)}.n-node strong{font-size:.81rem;letter-spacing:.005em;line-height:1.3}.n-node small{font-size:.62rem;color:#b6d2dc;text-transform:uppercase;letter-spacing:.08em}.n-node i{width:6px;height:6px;background:var(--teal);border-radius:50%;position:absolute;right:12px;top:12px}
+    .n-node.core{left:33%;top:41%;min-width:158px;background:linear-gradient(140deg,#2c5567,#17344d);border-color:#80d8d4;box-shadow:0 0 0 7px rgba(101,209,207,.07),0 0 45px rgba(58,170,194,.12)}
+    .n-node.econ{left:7%;top:17%}.n-node.oracle{right:7%;top:16%}.n-node.mind{right:5%;top:65%}.n-node.vouch{left:7%;top:68%}.n-node.vibe{right:10%;top:81%}
+    .network-bottom{position:absolute;bottom:18px;left:24px;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:#9ec0d1}
+    section{padding:90px 0}.section-alt{background:linear-gradient(180deg,rgba(16,31,52,.75),rgba(11,23,42,.34));border-block:1px solid rgba(105,150,177,.11)}.section-head{max-width:820px;margin-bottom:37px}.kicker{color:var(--teal);font-size:.73rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:13px}.section-head h2{font-size:clamp(1.95rem,3.7vw,3.35rem);letter-spacing:-.043em;line-height:1.15;margin:0 0 17px}.section-head p{color:var(--muted);font-size:1.04rem;max-width:740px;margin-bottom:0}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:7px}.stat{background:#101d31;border:1px solid #273b53;border-radius:17px;padding:23px 25px}.stat strong{display:block;color:#c7f7ed;font-size:1.65rem;line-height:1.2;letter-spacing:-.04em}.stat span{display:block;color:#a2b9c7;font-size:.8rem;margin-top:9px;line-height:1.5}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.feature{padding:29px;border:1px solid #2a4057;background:linear-gradient(151deg,#16263c,#101b2e);border-radius:var(--radius);min-height:210px}.feature .number{font-size:.7rem;color:var(--teal);font-weight:850;letter-spacing:.13em}.feature h3{font-size:1.1rem;margin:21px 0 8px;letter-spacing:-.02em}.feature p{font-size:.9rem;line-height:1.72;color:#bbccd8;margin:0}
+    .flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;margin:34px 0 16px}.flow-step{position:relative;padding:24px 15px 20px;border:1px solid #315069;background:#14263d;border-radius:16px;min-height:139px}.flow-step::after{content:"›";position:absolute;color:var(--teal);right:-13px;top:38px;font-size:1.6rem;z-index:2}.flow-step:last-child::after{content:none}.flow-step .flow-count{font-size:.67rem;letter-spacing:.12em;font-weight:800;color:var(--teal)}.flow-step h3{font-size:.88rem;line-height:1.35;margin:19px 0 0}.flow-step p{font-size:.75rem;line-height:1.4;margin:7px 0 0;color:#a7becd}
+    .note{padding:17px 20px;border:1px solid #3d5969;border-left:3px solid var(--teal);border-radius:11px;background:#112237;color:#bdd1dc;font-size:.87rem;line-height:1.65}.note strong{color:#ebfaf7}
+    .modules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.module{background:#111d30;border:1px solid #2b4056;border-radius:var(--radius);padding:26px;min-height:226px;transition:border-color .2s,transform .2s}.module:hover{border-color:#55848e;transform:translateY(-3px)}.module-top{display:flex;justify-content:space-between;align-items:center}.module-num{color:#73b0c4;font-size:.72rem;letter-spacing:.15em;font-weight:850}.module-mark{height:34px;width:34px;border:1px solid #44677a;border-radius:10px;display:grid;place-items:center;color:var(--teal);font-size:.94rem;font-weight:800}.module h3{font-size:1.23rem;margin:18px 0 9px;letter-spacing:-.025em}.module p{font-size:.9rem;color:#b5cad7;line-height:1.7;margin:0}.module em{font-style:normal;color:#b6f3e6}
+    .example-shell{display:grid;grid-template-columns:.86fr 1.14fr;gap:20px;align-items:stretch}.example-list{display:flex;flex-direction:column;gap:10px}.example-btn{width:100%;cursor:pointer;text-align:left;color:#ccdfeb;border:1px solid #354a61;background:#142438;padding:18px 20px;border-radius:13px;min-height:64px;display:flex;justify-content:space-between;gap:15px;align-items:center;font-size:.93rem;font-weight:650}.example-btn span{color:#90aebe}.example-btn[aria-pressed="true"]{border-color:#83ddd2;background:#1b3a47;color:#eafffb}.example-btn:hover{border-color:#75b1b5}
+    .example-result{border:1px solid #406477;background:linear-gradient(143deg,#153047,#0b1b2f);border-radius:22px;padding:28px;min-height:325px;display:flex;flex-direction:column}.result-kicker{font-size:.72rem;font-weight:800;letter-spacing:.13em;color:var(--teal);text-transform:uppercase}.result-quote{font-size:1.22rem;font-weight:750;line-height:1.5;letter-spacing:-.015em;margin:25px 0 22px}.result-label{font-size:.71rem;font-weight:800;color:#9bb6c7;letter-spacing:.11em;text-transform:uppercase}.selected-list{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 25px}.chip{font-size:.76rem;font-weight:760;color:#bdf5ec;border:1px solid #4d8588;background:#1b404c;border-radius:999px;padding:6px 12px}.result-foot{margin-top:auto;color:#aec6d5;font-size:.82rem;border-top:1px solid #31546a;padding-top:17px}.result-foot strong{color:#eaf7f4}
+    .evidence{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.e-card{border:1px solid #2f475d;border-radius:19px;background:#101e32;padding:27px;min-height:200px}.e-card .e-title{font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;color:#a9bfd0;font-weight:850}.e-card .e-value{font-size:1.9rem;line-height:1.25;letter-spacing:-.05em;margin:14px 0 9px;font-weight:820;color:#e4fff9}.e-card p{font-size:.88rem;line-height:1.7;color:#adc3d0;margin:0}
+    .boundary{margin-top:23px;padding:23px 25px;border:1px solid #655c48;border-radius:17px;background:linear-gradient(120deg,rgba(99,75,45,.18),rgba(16,30,49,.5));display:flex;gap:18px;align-items:flex-start}.boundary-symbol{font-size:1.45rem;line-height:1;color:#e8cf9b}.boundary h3{margin:0 0 7px;font-size:.98rem}.boundary p{font-size:.9rem;color:#cccfca;margin:0}
+    .uses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.use{background:#102036;border:1px solid #2b475c;border-radius:17px;padding:25px}.use .use-mark{font-size:.71rem;color:var(--teal);font-weight:800;letter-spacing:.13em}.use h3{margin:18px 0 9px;font-size:1.07rem}.use p{font-size:.9rem;color:#b2c9d4;margin:0}
+    .collab{position:relative;border-radius:28px;padding:54px;background:linear-gradient(115deg,#184152 0%,#15263f 64%,#182239 100%);border:1px solid #477081;overflow:hidden}.collab::after{content:"";position:absolute;right:-160px;top:-220px;width:470px;height:470px;border-radius:50%;border:1px solid rgba(162,253,239,.18);box-shadow:0 0 0 45px rgba(150,239,237,.035),0 0 0 110px rgba(150,239,237,.024);pointer-events:none}.collab h2{font-size:clamp(2rem,3.8vw,3.3rem);line-height:1.16;letter-spacing:-.04em;margin:0 0 15px;max-width:740px}.collab p{font-size:1rem;color:#c8dbe4;max-width:750px;margin-bottom:22px}.collab .small{font-size:.83rem;color:#b6cad4;max-width:770px;margin:23px 0 0}.collab .button{position:relative;z-index:2}
+    footer{border-top:1px solid #273e54;padding:38px 0 46px;background:#091421}.footer-row{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}.footer-title{font-size:1.05rem;letter-spacing:.12em;font-weight:820}.footer-slogan{color:var(--teal);font-size:.79rem;letter-spacing:.14em;margin:7px 0 10px;font-weight:750}.footer-fine{max-width:700px;font-size:.77rem;color:#91a9ba;line-height:1.65}.footer-side{text-align:right;font-size:.8rem;color:#91a9ba}.footer-side a{display:block;color:#bddbdc;margin-bottom:8px}.footer-side a:hover{text-decoration:underline}
+    @media(max-width:1000px){.nav{gap:15px}.nav a{font-size:.76rem}.hero-grid{gap:22px}.network-card{height:450px}.n-node{min-width:112px;padding:11px}.n-node.core{left:31%;min-width:150px}.flow{grid-template-columns:repeat(3,minmax(0,1fr))}.flow-step:nth-child(3)::after{content:none}.modules{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:760px){.wrap{width:min(var(--width),calc(100% - 34px))}.header-row{padding-block:12px;min-height:0;flex-wrap:wrap}.nav{order:3;width:100%;gap:19px;overflow-x:auto;white-space:nowrap;padding:5px 0}.nav a{font-size:.8rem}.hero{padding:65px 0 53px}.hero-grid{grid-template-columns:1fr;gap:38px}.hero-copy{font-size:1rem}.network-card{height:410px;max-width:580px;width:100%;margin-inline:auto}.stats,.feature-grid,.uses{grid-template-columns:1fr}.stats{gap:10px}.stat{padding:18px 22px}.feature{min-height:0}.example-shell{grid-template-columns:1fr}section{padding:65px 0}.collab{padding:33px 24px}.footer-row{flex-direction:column}.footer-side{text-align:left}.footer-side a{display:inline-block;margin-right:18px}.boundary{padding:20px}}
+    @media(max-width:510px){h1{font-size:3.1rem}.network-card{height:375px}.n-node{min-width:96px;padding:9px 10px}.n-node strong{font-size:.71rem}.n-node small{font-size:.54rem}.n-node.core{left:30%;top:42%;min-width:129px}.n-node.econ{left:5%}.n-node.oracle{right:4%}.n-node.vouch{left:4%}.n-node.mind{right:3%}.n-node.vibe{right:6%;top:81%}.network-top{left:17px;right:17px}.network-bottom{left:18px}.flow{grid-template-columns:repeat(2,minmax(0,1fr))}.flow-step:nth-child(3)::after{content:"›"}.flow-step:nth-child(2n)::after{content:none}.modules,.evidence{grid-template-columns:1fr}.flow-step{min-height:127px}.button{width:100%}.hero-tags{gap:7px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.module{transition:none}.button:hover,.module:hover{transform:none}}
+  </style>
 </head>
-
 <body>
-
-<h1>NEXOXI</h1>
-
-<p>
-<b>Technology for Everyone, Value for Everyone.</b>
-</p>
-
-<p>
-<b>Shaping the Future Through Real-World Value.</b>
-</p>
-
-<p>
-NEXOXI is an independent, modular execution
-and trust technology project designed to help
-AI systems and digital services coordinate
-under bounded authority, with verification,
-reconciliation and evidence-based assessment.
-</p>
-
-<p>
-NEXOXI aims to make advanced technology
-accessible and useful in everyday life,
-while keeping technical complexity
-behind the scenes.
-</p>
-
-
-<h2>Six Coordinated Modules</h2>
-
-<p>
-<span class="pill">Core Matrix</span>
-<span class="pill">Econode AI</span>
-<span class="pill">Oracle Mind</span>
-<span class="pill">Mind-Net</span>
-<span class="pill">VouchTrust</span>
-<span class="pill">VibeLife</span>
-</p>
-
-<p>
-Core Matrix coordinates task-specific
-specialist capabilities.
-
-Specialists are selected according to
-the requirements of each task.
-
-Not every specialist is required
-for every request.
-</p>
-
-
-<h2>Verified Technical Status</h2>
-
-<div class="box">
-
-<b>
-Historical NEXORA BUILD-397:
-1,528 / 1,528 internal regression tests passed.
-</b>
-
-<br><br>
-
-Historical Avalanche Fuji sovereign L1
-engineering and endurance milestones
-completed in a test environment.
-
-<br><br>
-
-No current production deployment is claimed.
-
-<br><br>
-
-Six coordinated specialist domains.
-
-Selected workflows are demonstrated
-in a controlled NEXOXI DEMO;
-production integrations remain subject
-to further development and verification.
-
-</div>
-
-
-<h2>Modular Coordination Architecture</h2>
-
-<div class="box flow">
-
-User Intent
-&darr;
-Core Matrix
-&darr;
-Relevant Specialists (as needed)
-&darr;
-Verification &amp; Authority Checks
-&darr;
-Controlled Outcome
-&darr;
-Evidence
-
-</div>
-
-<p class="muted">
-
-NEXOXI selects specialist capabilities
-according to each task.
-
-Not every specialist is required
-for every request.
-
-Verification does not independently
-grant execution authority.
-
-This diagram represents the proposed
-coordination architecture and does not
-claim that all stages are deployed
-in production external systems.
-
-</p>
-
-
-<h2>Current Demonstration Status — DEMO_ONLY</h2>
-
-<div class="box">
-
-<p>
-NEXOXI currently demonstrates selected
-natural-language service request workflows,
-structured information collection,
-and permission-bounded assessment.
-</p>
-
-<p>
-The public demonstration does not perform
-live bookings, payments, provider transactions,
-or production blockchain execution.
-</p>
-
-<p>
-Historical engineering milestones
-are presented separately from
-the current DEMO capabilities.
-</p>
-
-<p>
-<b>
-DEMO_ONLY — No real-world execution
-is authorized or performed.
-</b>
-</p>
-
-</div>
-
-
-<h2>VibeLife</h2>
-
-<p>
-<b>Ask once. NEXOXI handles the rest.</b>
-</p>
-
-<p>
-VibeLife is NEXOXI's proposed
-real-world service layer.
-
-Its target areas include travel
-and mobility, delivery and local
-services, commerce, and trusted
-provider networks.
-</p>
-
-<p>
-VibeTravel remains a travel-focused
-use case within VibeLife.
-</p>
-
-<p class="muted">
-These target service areas do not
-represent currently active commercial
-provider integrations.
-</p>
-
-
-<h2>Trust Principle</h2>
-
-<p>
-<b>Trust is not assumed; it is proven.</b>
-</p>
-
-<p>
-<b>Verify. Authorize. Execute. Prove.</b>
-</p>
-
-<p>
-NEXOXI is designed around bounded authority,
-evidence-based decisions,
-controlled execution permissions,
-and auditable outcomes.
-</p>
-
-<p>
-A valid technical signature or
-local demonstration result
-does not independently prove
-that a real-world transaction occurred.
-</p>
-
-
-<h2>Proposed Stellar / Soroban Integration</h2>
-
-<div class="box">
-
-<p>
-NEXOXI is exploring a focused Soroban
-integration for verifiable service attestations.
-</p>
-
-<p>
-The proposed approach combines
-Oracle Mind evidence assessment
-and VouchTrust provider attestations
-with permission-bounded coordination.
-</p>
-
-<p>
-The goal is to allow Stellar-based
-applications to record and independently
-verify authorized service evidence
-without placing sensitive personal
-or confidential information on-chain.
-</p>
-
-<p>
-<b>
-This integration is proposed
-and has not yet been implemented
-or deployed.
-</b>
-</p>
-
-<p class="muted">
-No existing Stellar partnership,
-grant approval, or operational
-Soroban integration is claimed.
-</p>
-
-</div>
-
-
-<h2>Ecosystem Collaboration</h2>
-
-<p>
-NEXOXI seeks complementary collaboration
-with technology ecosystems,
-research organizations,
-developers, and potential service providers.
-</p>
-
-<p>
-The project aims to remain independent
-while exploring compatible,
-permission-bounded integrations.
-</p>
-
-<p>
-Participation in one ecosystem
-does not require abandoning another.
-</p>
-
-<p class="muted">
-Potential collaboration does not
-constitute an existing partnership,
-funding approval, or deployment agreement.
-</p>
-
-
-<h2>Current Focus</h2>
-
-<p>
-Controlled public demonstrations,
-focused pilot proposals,
-technical evidence review,
-ecosystem collaboration,
-and evaluation of future
-real-world integrations.
-</p>
-
-<p>
-NEXOXI prioritizes practical value,
-security, transparency,
-and accessible technology.
-</p>
-
-
-<h2>Controlled Disclosure</h2>
-
-<p>
-Detailed technical evidence may be
-made available for controlled review
-upon genuine technical interest
-and appropriate confidentiality
-arrangements.
-</p>
-
-<p class="muted">
-This public overview intentionally omits
-confidential source code,
-sensitive architecture,
-unpublished patent implementation details,
-private credentials,
-and protected research materials.
-</p>
-
-<p class="muted">
-Patent and trademark applications
-are not represented as granted rights.
-</p>
-
-
-<hr>
-
-<p>
-<b>
-NEXOXI — Technology for Everyone,
-Value for Everyone.
-</b>
-</p>
-
-<p>
-<b>
-Trust is not assumed; it is proven.
-</b>
-</p>
-
-<p>
-<b>
-Shaping the Future Through Real-World Value.
-</b>
-</p>
-
+<a href="#main" class="skip" data-i18n="skip">Skip to main content</a>
+<header>
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="NEXOXI homepage">
+      <svg viewBox="0 0 48 48" role="img" aria-label="NEXOXI monogram"><rect x="2" y="2" width="44" height="44" rx="13" fill="#13293d" stroke="#66bdc8" stroke-width="1.4"/><path d="M14 34V14l20 20V14" fill="none" stroke="#b1f7e8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      NEXOXI
+    </a>
+    <nav class="nav" aria-label="Main navigation"><a href="#vision" data-i18n="navVision">Vision</a><a href="#architecture" data-i18n="navArchitecture">Architecture</a><a href="#specialists" data-i18n="navSpecialists">Specialists</a><a href="#evidence" data-i18n="navEvidence">Evidence</a><a href="#collaboration" data-i18n="navCollab">Collaboration</a></nav>
+    <div class="langs" role="group" aria-label="Language / Dil"><button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button><button class="lang-btn" type="button" data-lang="tr" aria-pressed="false">TR</button></div>
+  </div>
+</header>
+<main id="main">
+  <div id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span><span data-i18n="heroEyebrow">INDEPENDENT • FOUNDER-LED INITIATIVE</span></div>
+        <h1><span data-i18n="heroTitle1">Real-world value.</span><br><span class="gradient" data-i18n="heroTitle2">Verified by design.</span></h1>
+        <p class="hero-copy" data-i18n="heroCopy">NEXOXI is a modular <strong>execution and trust technology initiative</strong> connecting human intent, specialized intelligence, bounded authority and accountable outcomes. The goal: make powerful technology useful without making people learn the infrastructure behind it.</p>
+        <div class="buttons"><a class="button primary" href="#architecture"><span data-i18n="heroCTA1">Explore the architecture</span> ↗</a><a class="button secondary" href="#evidence" data-i18n="heroCTA2">See technical status</a></div>
+        <div class="hero-tags"><span class="tag" data-i18n="tag1">CONTROLLED DEMO</span><span class="tag" data-i18n="tag2">AVALANCHE FUJI TEST HISTORY</span><span class="tag" data-i18n="tag3">NO PRODUCTION CLAIM</span></div>
+      </div>
+      <div class="network-card" role="img" aria-label="Conceptual illustration: Core Matrix coordinates five specialized domains. Not a live architecture monitor.">
+        <div class="network-top"><span>NEXOXI / SIX SPECIALIZED DOMAINS</span><div class="signal" aria-hidden="true"><i></i><i></i><i></i></div></div>
+        <svg class="network-lines" viewBox="0 0 500 505" preserveAspectRatio="none" aria-hidden="true"><path d="M224 246L98 117 M224 246L382 111 M224 246L411 353 M224 246L99 374 M224 246L388 435"/><circle cx="224" cy="246" r="145" stroke="#4e8ba0" fill="none" opacity=".25"/><circle cx="224" cy="246" r="100" stroke="#4e8ba0" fill="none" opacity=".2"/></svg>
+        <div class="n-node econ"><strong>Econode AI</strong><small>Resources</small><i></i></div>
+        <div class="n-node oracle"><strong>Oracle Mind</strong><small>Evidence</small><i></i></div>
+        <div class="n-node core"><strong>Core Matrix</strong><small>Coordination</small><i></i></div>
+        <div class="n-node mind"><strong>Mind-Net</strong><small>Routing</small><i></i></div>
+        <div class="n-node vouch"><strong>VouchTrust</strong><small>Trust</small><i></i></div>
+        <div class="n-node vibe"><strong>VibeLife</strong><small>Human utility</small><i></i></div>
+        <div class="network-bottom" data-i18n="networkBottom">CONCEPTUAL TOPOLOGY • NOT LIVE TELEMETRY</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap stats" aria-label="Project at a glance">
+    <div class="stat"><strong>06</strong><span data-i18n="stat1">Coordinated specialist domains, activated selectively.</span></div>
+    <div class="stat"><strong>1,528 / 1,528</strong><span data-i18n="stat2">Historical BUILD-397 internal regression tests passed.</span></div>
+    <div class="stat"><strong>DEMO_ONLY</strong><span data-i18n="stat3">Controlled research demonstrations, not a live commercial service.</span></div>
+  </div>
+
+  <section id="vision">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker" data-i18n="visionKicker">01 / WHY NEXOXI</div><h2 data-i18n="visionTitle">People describe the outcome. The system handles the complexity.</h2><p data-i18n="visionIntro">Everyday services depend on information, coordination and permission. NEXOXI explores how AI-assisted systems can support those needs while keeping critical decisions evidence-led and accountable.</p></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="number">01 / HUMAN FIRST</div><h3 data-i18n="feature1Title">One simple point of entry</h3><p data-i18n="feature1Desc">A person expresses a need in everyday language. The system identifies the relevant expertise rather than expecting a user to understand chains, agents or protocols.</p></article>
+        <article class="feature"><div class="number">02 / BOUNDED AUTHORITY</div><h3 data-i18n="feature2Title">Permission is not assumed</h3><p data-i18n="feature2Desc">A specialist may assess a request, but that assessment does not grant unrestricted authority to act. Limits and final decision gates remain separate.</p></article>
+        <article class="feature"><div class="number">03 / PROOF OVER PROMISE</div><h3 data-i18n="feature3Title">Evidence before claims</h3><p data-i18n="feature3Desc">Technical progress, controlled demonstrations and real-world execution are distinct stages. The goal is traceability, including when a request must be refused.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="architecture">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker" data-i18n="archKicker">02 / CONTROLLED EXECUTION</div><h2 data-i18n="archTitle">From intention to accountable evidence.</h2><p data-i18n="archIntro">This is the architectural decision model NEXOXI is developing. Not every stage is deployed as an external production service.</p></div>
+      <div class="flow" aria-label="Conceptual decision sequence">
+        <div class="flow-step"><span class="flow-count">01</span><h3 data-i18n="flow1">Intent</h3><p data-i18n="flow1d">A human need</p></div>
+        <div class="flow-step"><span class="flow-count">02</span><h3 data-i18n="flow2">Verification</h3><p data-i18n="flow2d">Evidence checks</p></div>
+        <div class="flow-step"><span class="flow-count">03</span><h3 data-i18n="flow3">Authority</h3><p data-i18n="flow3d">Scope and limits</p></div>
+        <div class="flow-step"><span class="flow-count">04</span><h3 data-i18n="flow4">Decision Gate</h3><p data-i18n="flow4d">Allow or refuse</p></div>
+        <div class="flow-step"><span class="flow-count">05</span><h3 data-i18n="flow5">Execution</h3><p data-i18n="flow5d">Only if authorized</p></div>
+        <div class="flow-step"><span class="flow-count">06</span><h3 data-i18n="flow6">Proof</h3><p data-i18n="flow6d">Traceable outcome</p></div>
+      </div>
+      <div class="note"><strong data-i18n="archNoteStrong">Core rule:</strong> <span data-i18n="archNote">Verification alone is not authorization. If the evidence or authority is insufficient, a consequential action should be held or refused—not silently executed.</span></div>
+    </div>
+  </section>
+
+  <section id="specialists">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker" data-i18n="specialKicker">03 / SIX WORLDS, ONE PURPOSE</div><h2 data-i18n="specialTitle">The right expertise for each task.</h2><p data-i18n="specialIntro">NEXOXI connects six specialized domains. Core Matrix selects relevant capabilities for a specific requirement; every module does not need to run on every request.</p></div>
+      <div class="modules">
+        <article class="module"><div class="module-top"><span class="module-num">DOMAIN / 01</span><span class="module-mark">C</span></div><h3>Core Matrix</h3><p data-i18n="module1">Interprets intent, selects relevant specialists and coordinates task results. Coordination does not independently create permission to execute.</p></article>
+        <article class="module"><div class="module-top"><span class="module-num">DOMAIN / 02</span><span class="module-mark">E</span></div><h3>Econode AI</h3><p data-i18n="module2">Supports economic and resource-related evaluations, including limits and efficiency. It does not independently control physical or financial systems.</p></article>
+        <article class="module"><div class="module-top"><span class="module-num">DOMAIN / 03</span><span class="module-mark">O</span></div><h3>Oracle Mind</h3><p data-i18n="module3">Assesses claims, supporting information and evidence quality. A verification result is not an execution authorization.</p></article>
+        <article class="module"><div class="module-top"><span class="module-num">DOMAIN / 04</span><span class="module-mark">M</span></div><h3>Mind-Net</h3><p data-i18n="module4">Supports routing and coordination among components, software and potentially machines, within defined communication boundaries.</p></article>
+        <article class="module"><div class="module-top"><span class="module-num">DOMAIN / 05</span><span class="module-mark">V</span></div><h3>VouchTrust</h3><p data-i18n="module5">Evaluates trust-related conditions, references and required confirmations. Its assessment cannot silently grant blanket authority.</p></article>
+        <article class="module"><div class="module-top"><span class="module-num">DOMAIN / 06</span><span class="module-mark">L</span></div><h3>VibeLife</h3><p data-i18n="module6">The envisioned human-facing layer for everyday services. <em>VibeTravel</em> remains the travel-focused use case within VibeLife—not a seventh domain.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="routing">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker" data-i18n="routingKicker">04 / SELECTIVE ORCHESTRATION</div><h2 data-i18n="routingTitle">One entry point. Different paths.</h2><p data-i18n="routingIntro">The local NEXOXI prototype has demonstrated routing for economic, trust and travel requests. The examples below are a static educational preview; these buttons do not contact AI agents, providers or a live backend.</p></div>
+      <div class="example-shell">
+        <div class="example-list" role="group" aria-label="Illustrative requests">
+          <button type="button" class="example-btn" data-example="budget" aria-pressed="true"><span data-i18n="exampleBudget">Budget evaluation</span><span aria-hidden="true">↗</span></button>
+          <button type="button" class="example-btn" data-example="trust" aria-pressed="false"><span data-i18n="exampleTrust">Provider document check</span><span aria-hidden="true">↗</span></button>
+          <button type="button" class="example-btn" data-example="travel" aria-pressed="false"><span data-i18n="exampleTravel">Airport transfer request</span><span aria-hidden="true">↗</span></button>
+          <button type="button" class="example-btn" data-example="mixed" aria-pressed="false"><span data-i18n="exampleMixed">An ambiguous request</span><span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="example-result" aria-live="polite" aria-atomic="true">
+          <div class="result-kicker" data-i18n="resultKicker">ILLUSTRATIVE ROUTING PREVIEW</div>
+          <div class="result-quote" id="example-quote">“I want to review my budget.”</div>
+          <div class="result-label" data-i18n="resultLabel">Relevant specialist(s)</div>
+          <div class="selected-list" id="example-specialists"><span class="chip">Econode AI</span></div>
+          <div class="result-foot"><strong id="example-status">Economic evaluation route.</strong><br><span data-i18n="resultDisclaimer">No real analysis, verification, booking, payment or execution is performed on this page.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evidence">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker" data-i18n="evidenceKicker">05 / EVIDENCE WITH BOUNDARIES</div><h2 data-i18n="evidenceTitle">What has been demonstrated—and what has not.</h2><p data-i18n="evidenceIntro">These are historical engineering records and controlled local observations. They are not a third-party audit, a security certification or proof of production readiness.</p></div>
+      <div class="evidence">
+        <article class="e-card"><div class="e-title" data-i18n="proof1label">HISTORICAL INTERNAL REGRESSION</div><div class="e-value">1,528 / 1,528</div><p data-i18n="proof1desc">BUILD-397 internal regression tests recorded as passed. This is a historical test checkpoint, not a fresh test of today's published site.</p></article>
+        <article class="e-card"><div class="e-title" data-i18n="proof2label">AVALANCHE ENGINEERING</div><div class="e-value" data-i18n="proof2value">FUJI TESTNET</div><p data-i18n="proof2desc">Historic sovereign Avalanche Fuji L1 deployment and endurance work. The L1 is not being represented as currently running or commercially deployed.</p></article>
+        <article class="e-card"><div class="e-title" data-i18n="proof3label">HISTORICAL PROTOCOL CHECKPOINT</div><div class="e-value">18 / 18</div><p data-i18n="proof3desc">Recorded Golden Health Check for an earlier Fuji C-Chain contract and AI-to-AI trust-state / Execution Proof tests. Distinct from the later sovereign L1.</p></article>
+        <article class="e-card"><div class="e-title" data-i18n="proof4label">LOCAL PRODUCT PROTOTYPE</div><div class="e-value" data-i18n="proof4value">3 ROUTES</div><p data-i18n="proof4desc">Budget, document-check and transfer requests selected different specialists in the local portal. Routing does not prove live expert-to-expert messaging or real-world fulfillment.</p></article>
+      </div>
+      <div class="boundary"><div class="boundary-symbol" aria-hidden="true">◇</div><div><h3 data-i18n="boundaryTitle">Current boundary: research and controlled demonstration</h3><p data-i18n="boundaryDesc">Security hardening, recovery consistency, access isolation and broader end-to-end acceptance remain open engineering work. No real bookings, payments, provider operations or authorized production execution are offered here. Patent and trademark applications have been filed in Türkiye; applications are not granted rights.</p></div></div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="utility">
+    <div class="wrap"><div class="section-head"><div class="kicker" data-i18n="utilityKicker">06 / REAL-WORLD DIRECTION</div><h2 data-i18n="utilityTitle">Technology should touch everyday life.</h2><p data-i18n="utilityIntro">NEXOXI's long-term direction is practical utility for people, businesses and institutions. The areas below are envisioned applications, not claims of active commercial integrations.</p></div>
+      <div class="uses">
+        <article class="use"><div class="use-mark">01 / MOBILITY</div><h3 data-i18n="use1title">Travel & local mobility</h3><p data-i18n="use1desc">Help people express travel and transport needs without navigating complicated service infrastructure.</p></article>
+        <article class="use"><div class="use-mark">02 / COMMUNITY</div><h3 data-i18n="use2title">Local services & logistics</h3><p data-i18n="use2desc">Explore accountable coordination across providers, deliveries, local commerce and community needs.</p></article>
+        <article class="use"><div class="use-mark">03 / RESOURCES</div><h3 data-i18n="use3title">Production & resource efficiency</h3><p data-i18n="use3desc">Research how bounded decisions and verified information could support energy, water, agriculture and production.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="collaboration">
+    <div class="wrap">
+      <div class="collab">
+        <div class="kicker" data-i18n="collabKicker">07 / RESPONSIBLE COLLABORATION</div>
+        <h2 data-i18n="collabTitle">Built independently. Open to meaningful technical dialogue.</h2>
+        <p data-i18n="collabDesc">NEXOXI is an independent, founder-led initiative based in Türkiye. It welcomes relevant technical evaluation, research conversations and proportionate discussions about future collaboration, starting from non-confidential material.</p>
+        <a class="button primary" href="https://github.com/saliakay-sys/nexoxi-public" target="_blank" rel="noopener noreferrer"><span data-i18n="collabCTA">View public GitHub repository</span> ↗</a>
+        <p class="small" data-i18n="collabNote">This public overview intentionally excludes confidential source code, unpublished patent details, private credentials and protected research. Further disclosure requires appropriate confidentiality boundaries. No existing partnership, grant award or deployment agreement is implied.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footer-row">
+    <div><div class="footer-title">NEXOXI</div><div class="footer-slogan">UNIQUE WORLDS. ONE FUTURE.</div><div class="footer-fine" data-i18n="footerDesc">Technology for everyone. Value in the real world.<br>Independent research and controlled demonstration. No live commercial service or financial operations.</div></div>
+    <div class="footer-side"><a href="#top" data-i18n="backTop">Back to top ↑</a><span data-i18n="footerLocation">Founder-led initiative · Türkiye</span></div>
+  </div>
+</footer>
+<script>
+  'use strict';
+  const translations={
+    en:{},
+    tr:{
+      skip:'Ana içeriğe geç',navVision:'Vizyon',navArchitecture:'Mimari',navSpecialists:'Uzmanlar',navEvidence:'Kanıtlar',navCollab:'İş birliği',
+      heroEyebrow:'BAĞIMSIZ • KURUCU ÖNCÜLÜĞÜNDE GİRİŞİM',heroTitle1:'Gerçek dünya değeri.',heroTitle2:'Tasarımında doğrulanabilirlik.',
+      heroCopy:'NEXOXI; insan niyetini, uzmanlaşmış değerlendirmeyi, sınırlandırılmış yetkiyi ve hesap verebilir sonuçları birbirine bağlamayı amaçlayan modüler bir <strong>yürütme ve güven teknolojisi girişimidir.</strong> Hedefimiz, insanlara altyapının karmaşıklığını öğretmeden ileri teknolojiyi günlük yaşamda faydalı kılmaktır.',
+      heroCTA1:'Mimariyi keşfet',heroCTA2:'Teknik durumu incele',tag1:'KONTROLLÜ DEMO',tag2:'AVALANCHE FUJI TEST GEÇMİŞİ',tag3:'ÜRETİM İDDİASI YOK',networkBottom:'KAVRAMSAL YAPI • CANLI TELEMETRİ DEĞİLDİR',
+      stat1:'İhtiyaca göre seçilen altı uzmanlık alanı.',stat2:'Tarihsel BUILD-397 iç regresyon testleri başarılı.',stat3:'Kontrollü araştırma gösterimi; canlı ticari hizmet değil.',
+      visionKicker:'01 / NEDEN NEXOXI',visionTitle:'İnsan ihtiyacını anlatır. Sistem karmaşıklığı yönetir.',visionIntro:'Günlük hizmetler güvenilir bilgiye, koordinasyona ve uygun yetkiye ihtiyaç duyar. NEXOXI, yapay zekâ destekli sistemlerin bu ihtiyaçlara nasıl yardımcı olabileceğini, kritik kararları kanıta ve hesap verebilirliğe bağlı tutarak araştırır.',
+      feature1Title:'Herkes için tek giriş kapısı',feature1Desc:'Kişi ihtiyacını doğal dille söyler. Sistem ilgili uzmanlığı belirler; kullanıcıdan blokzincir, yapay zekâ ajanı veya protokol bilmesi beklenmez.',
+      feature2Title:'Yetki varsayılmaz',feature2Desc:'Bir uzman talebi değerlendirebilir; bu değerlendirme sınırsız işlem yetkisi vermez. Sınırlar ve nihai karar kapısı birbirinden ayrıdır.',
+      feature3Title:'Vaadin değil, kanıtın önceliği',feature3Desc:'Teknik ilerleme, kontrollü demo ve gerçek dünya yürütmesi farklı aşamalardır. Talebin reddedildiği durumlar dâhil izlenebilirlik hedeflenir.',
+      archKicker:'02 / KONTROLLÜ YÜRÜTME',archTitle:'Niyetten hesap verebilir kanıta.',archIntro:'Bu, NEXOXI’nin geliştirmekte olduğu karar mimarisidir. Aşamaların tümünün harici üretim sistemlerinde devreye alındığı iddia edilmez.',
+      flow1:'Niyet',flow1d:'İnsanın ihtiyacı',flow2:'Doğrulama',flow2d:'Kanıt kontrolleri',flow3:'Yetki',flow3d:'Kapsam ve sınırlar',flow4:'Karar Kapısı',flow4d:'İzin ver veya reddet',flow5:'Yürütme',flow5d:'Yalnızca yetki varsa',flow6:'Kanıt',flow6d:'İzlenebilir sonuç',
+      archNoteStrong:'Temel kural:',archNote:'Doğrulama tek başına yetkilendirme değildir. Kanıt veya yetki yetersizse sonuç doğuran bir işlem sessizce yapılmaz; bekletilir veya reddedilir.',
+      specialKicker:'03 / ALTI DÜNYA, TEK AMAÇ',specialTitle:'Her görev için doğru uzmanlık.',specialIntro:'NEXOXI altı farklı uzmanlık alanını birleştirir. Core Matrix, ihtiyaca göre ilgili yetenekleri seçer; her talepte bütün modüllerin çalışması gerekmez.',
+      module1:'Niyeti yorumlar, ilgili uzmanları seçer ve görev sonuçlarını koordine eder. Koordinasyon tek başına yürütme yetkisi oluşturmaz.',
+      module2:'Ekonomik sınırlar ve kaynak verimliliği gibi değerlendirmelere destek olur. Fiziksel veya finansal sistemleri bağımsız olarak yönetmez.',
+      module3:'İddiaları, destekleyici bilgileri ve kanıt niteliğini değerlendirir. Doğrulama sonucu, işlem yetkisi değildir.',
+      module4:'Bileşenler, yazılımlar ve gelecekte makineler arasında, tanımlı sınırlar içinde yönlendirme ve koordinasyonu destekler.',
+      module5:'Güven koşullarını, referansları ve gerekli onayları değerlendirir. Değerlendirmesi sınırsız yetkiyi kendiliğinden oluşturmaz.',
+      module6:'Günlük hizmetlere yönelik tasarlanan insan odaklı katmandır. <em>VibeTravel</em>, VibeLife içindeki seyahat kullanım alanıdır; yedinci bir modül değildir.',
+      routingKicker:'04 / SEÇİCİ KOORDİNASYON',routingTitle:'Tek giriş. Farklı yollar.',routingIntro:'Yerel NEXOXI ürün adayında ekonomi, güven ve seyahat taleplerinin farklı uzmanlara yönlendirilmesi gösterildi. Aşağıdaki düğmeler yalnızca açıklayıcı bir örnektir; gerçek yapay zekâ ajanlarına, hizmet sağlayıcılara veya canlı bir arka uca bağlanmaz.',
+      exampleBudget:'Bütçe değerlendirmesi',exampleTrust:'Hizmet sağlayıcı belgesi',exampleTravel:'Havalimanı transfer talebi',exampleMixed:'Belirsiz bir talep',resultKicker:'AÇIKLAYICI YÖNLENDİRME ÖNİZLEMESİ',resultLabel:'İlgili uzman(lar)',resultDisclaimer:'Bu sayfada gerçek analiz, belge doğrulaması, rezervasyon, ödeme veya yürütme yapılmaz.',
+      evidenceKicker:'05 / SINIRLARI BELLİ KANITLAR',evidenceTitle:'Neler gösterildi, neler henüz gösterilmedi?',evidenceIntro:'Bunlar tarihsel mühendislik kayıtları ve kontrollü yerel gözlemlerdir. Bağımsız denetim, güvenlik sertifikası veya üretime hazır olunduğunun kanıtı değildir.',
+      proof1label:'TARİHSEL İÇ REGRESYON',proof1desc:'BUILD-397 iç regresyon testlerinin başarılı olduğu kaydedildi. Bu, geçmişe ait bir test noktasıdır; bugün yayımlanan sitenin yeni test edildiği anlamına gelmez.',
+      proof2label:'AVALANCHE MÜHENDİSLİĞİ',proof2value:'FUJI TEST AĞI',proof2desc:'Tarihsel bağımsız Avalanche Fuji L1 kurulumu ve dayanıklılık çalışmaları. L1’in şu anda çalıştığı veya ticari olarak devreye alındığı iddia edilmez.',
+      proof3label:'TARİHSEL PROTOKOL KAYDI',proof3desc:'Önceki Fuji C-Chain sözleşmesinde kaydedilen 18/18 Golden Health Check ile AI-to-AI güven yaşam döngüsü ve Execution Proof testleri. Sonraki bağımsız L1’den farklıdır.',
+      proof4label:'YEREL ÜRÜN ADAYI',proof4value:'3 YÖNLENDİRME',proof4desc:'Yerel portalda bütçe, belge kontrolü ve transfer talepleri farklı uzmanlara yönlendirildi. Bu, bağımsız ajanların canlı mesajlaşmasını veya gerçek hizmet sunumunu tek başına kanıtlamaz.',
+      boundaryTitle:'Mevcut sınır: araştırma ve kontrollü gösterim',boundaryDesc:'Güvenlik sağlamlaştırma, kurtarma tutarlılığı, erişim izolasyonu ve geniş kapsamlı uçtan uca kabul testleri açık mühendislik işleridir. Burada gerçek rezervasyon, ödeme, hizmet sağlayıcı işlemi veya yetkilendirilmiş üretim yürütmesi sunulmaz. Türkiye’de patent ve marka başvuruları yapılmıştır; başvuru, tescil veya patent verilmiş olduğu anlamına gelmez.',
+      utilityKicker:'06 / GERÇEK DÜNYA YÖNELİMİ',utilityTitle:'Teknoloji günlük yaşama dokunmalı.',utilityIntro:'NEXOXI’nin uzun vadeli amacı insanlar, işletmeler ve kurumlar için somut faydadır. Aşağıdakiler hedeflenen uygulama alanlarıdır; aktif ticari entegrasyon iddiası değildir.',
+      use1title:'Seyahat ve yerel ulaşım',use1desc:'İnsanların karmaşık hizmet altyapılarını öğrenmeden seyahat ve ulaşım ihtiyaçlarını ifade edebilmesine yardımcı olmak.',
+      use2title:'Yerel hizmetler ve lojistik',use2desc:'Sağlayıcılar, teslimatlar, yerel ticaret ve toplum ihtiyaçları arasında hesap verebilir koordinasyon olanaklarını araştırmak.',
+      use3title:'Üretim ve kaynak verimliliği',use3desc:'Enerji, su, tarım ve üretimde sınırlandırılmış kararların ve doğrulanmış bilginin nasıl yardımcı olabileceğini araştırmak.',
+      collabKicker:'07 / SORUMLU İŞ BİRLİĞİ',collabTitle:'Bağımsız geliştirildi. Anlamlı teknik diyaloğa açık.',collabDesc:'NEXOXI, Türkiye merkezli, bağımsız kurucu öncülüğünde bir girişimdir. Gizli olmayan materyallerden başlayarak ilgili teknik değerlendirmelere, araştırma görüşmelerine ve uygulanabilir iş birliği seçeneklerine açıktır.',collabCTA:'Herkese açık GitHub deposunu gör',
+      collabNote:'Bu genel tanıtım; gizli kaynak kodlarını, yayımlanmamış patent ayrıntılarını, özel kimlik bilgilerini ve korunan araştırmaları içermez. Daha derin paylaşım için uygun gizlilik sınırları gerekir. Mevcut ortaklık, hibe kazanımı veya dağıtım anlaşması iddiası yoktur.',
+      footerDesc:'Herkes için teknoloji. Gerçek dünyada değer.<br>Bağımsız araştırma ve kontrollü gösterim. Canlı ticari hizmet veya finansal işlem yoktur.',backTop:'Başa dön ↑',footerLocation:'Kurucu öncülüğünde girişim · Türkiye'
+    }
+  };
+  const scenarios={
+    budget:{en:{quote:'“I want to review my budget.”',specialists:['Econode AI'],status:'Economic evaluation route.'},tr:{quote:'“Bütçemi değerlendirmek istiyorum.”',specialists:['Econode AI'],status:'Ekonomik değerlendirme yönlendirmesi.'}},
+    trust:{en:{quote:'“I want to check a provider’s license document.”',specialists:['VouchTrust','Oracle Mind'],status:'Trust and evidence route.'},tr:{quote:'“Bir hizmet sağlayıcısının lisans belgesini kontrol etmek istiyorum.”',specialists:['VouchTrust','Oracle Mind'],status:'Güven ve kanıt yönlendirmesi.'}},
+    travel:{en:{quote:'“I need a transfer from the airport.”',specialists:['VibeTravel / VibeLife','Mind-Net'],status:'Travel and routing preview.'},tr:{quote:'“Havalimanından transfer istiyorum.”',specialists:['VibeTravel / VibeLife','Mind-Net'],status:'Seyahat ve yönlendirme önizlemesi.'}},
+    mixed:{en:{quote:'“Is the transfer price reasonable?”',specialists:['Clarification needed'],status:'Ambiguous intent. No execution or specialist verdict.'},tr:{quote:'“Transfer fiyatı uygun mu?”',specialists:['Açıklama gerekli'],status:'Birden fazla niyet olabilir. Yürütme veya uzman kararı yok.'}}
+  };
+  let language='en',selected='budget';
+  function updateScenario(){
+    const item=scenarios[selected][language];
+    document.querySelector('#example-quote').textContent=item.quote;
+    const list=document.querySelector('#example-specialists');list.replaceChildren();
+    item.specialists.forEach(name=>{const chip=document.createElement('span');chip.className='chip';chip.textContent=name;list.appendChild(chip)});
+    document.querySelector('#example-status').textContent=item.status;
+    document.querySelectorAll('[data-example]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.example===selected)));
+  }
+  function setLanguage(lang){
+    language=lang==='tr'?'tr':'en';document.documentElement.lang=language;
+    document.querySelectorAll('[data-i18n]').forEach(node=>{
+      const key=node.dataset.i18n;
+      if(language==='en'){
+        if(node.dataset.enOriginal!==undefined)node.innerHTML=node.dataset.enOriginal;
+      }else if(translations.tr[key]!==undefined)node.innerHTML=translations.tr[key];
+    });
+    document.querySelectorAll('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===language)));
+    document.title=language==='tr'?'NEXOXI — Benzersiz Dünyalar. Tek Gelecek.':'NEXOXI — Unique Worlds. One Future.';
+    updateScenario();
+    try{localStorage.setItem('nexoxi_language',language)}catch(_e){}
+  }
+  document.querySelectorAll('[data-i18n]').forEach(node=>{node.dataset.enOriginal=node.innerHTML});
+  document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.lang)));
+  document.querySelectorAll('[data-example]').forEach(button=>button.addEventListener('click',()=>{selected=button.dataset.example;updateScenario()}));
+  let initial='en';try{initial=localStorage.getItem('nexoxi_language')||'en'}catch(_e){}
+  setLanguage(initial);
+</script>
 </body>
 </html>
